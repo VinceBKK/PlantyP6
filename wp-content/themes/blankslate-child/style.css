@@ -1,0 +1,170 @@
+/*
+Theme Name: Blankslate Enfant
+Description: Theme enfant de Blankslate. Vous pouvez maintenant effectuer vos modifications en toute sécurité.
+Author: WPMarmite
+Author URI: https://wpmarmite.com
+Template: blankslate
+Version: 1.0
+*/
+
+/****** General ******/
+:root {
+    --main-bg-color: #E3D9D0;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+}
+
+body.page {
+    background-color:#E3D9D0
+}
+
+body .wp-block-group {
+    background-color: #E3D9D0;
+}
+
+/****** Header ******/
+#header {
+    display: flex;
+    justify-content: space-between; /* Espacer les éléments aux extrémités */
+    align-items: center; /* Centrer les éléments verticalement */
+    width: 100%;
+    height:80px;
+    background-color: #FFFFFF; /* Couleur de fond du haut de page */
+    flex-wrap: wrap; /* Permet aux éléments de se positionner sur plusieurs lignes si nécessaire */
+}
+
+#site-logo {
+    width: 201px; /* Largeur du logo */
+    height: 19px; /* Hauteur du logo */
+    margin-left: 37px; /* Marge à gauche */
+}
+
+#menu {
+    display: flex;
+    align-items: center; /* Centrer les liens verticalement */
+    gap: 20px; /* Espacement entre les éléments du menu */
+}
+
+#menu a {
+    text-decoration: none; /* Suppression du soulignement du lien */
+}
+
+#menu ul {
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button-link {
+    display: inline-block; /* Permet d'appliquer des propriétés de bloc tout en restant en ligne */
+    width: 236px; /* Largeur du bouton */
+    height: 80px; /* Hauteur du bouton */
+    line-height: 80px; /* Centrer verticalement le texte dans le bouton */
+    text-align: center; /* Centrer horizontalement le texte dans le bouton */
+    right: 0; /* À l'extrémité gauche du header */
+
+    background-color: #DC9F96; /* Couleur d'arrière-plan du bouton */
+    border: none; /* Suppression de la bordure */
+    border-radius: 0px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur en main au survol */
+}
+
+#menu .menu-item.button-link a {
+    color: #ffffff; /* Couleur du texte du bouton */
+    text-decoration: none; /* Suppression du soulignement du lien */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+}
+
+.button-link:hover {
+    background-color: #DC9F96; /* Couleur d'arrière-plan au survol */
+}
+
+.menu-link {
+    left: 923px;
+    line-height: 80px;
+}
+
+#menu .menu-item a {
+    font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+    font-weight: 400; /* Ajustez l'épaisseur de la police selon vos préférences */
+    line-height: 80px; /* Ajustez la hauteur de ligne pour centrer verticalement le texte */
+    color: #000000; /* Ajustez la couleur du texte selon vos préférences */
+    text-decoration: none; /* Suppression du soulignement du lien */
+}
+
+#menu .menu-item a:hover {
+    text-decoration: underline; /* Soulignement du lien au survol */
+}
+
+/* Media Query pour les écrans de petite taille */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: stretch; /* Les éléments s'étirent pour prendre toute la largeur */
+        height: auto; /* Suppression de la hauteur fixe */
+    }
+    
+    #site-logo {
+        margin: 0 auto 10px; /* Centrer le logo et ajouter un peu d'espace en dessous */
+    }
+    
+    #menu {
+        width: 100%; /* Le menu prend toute la largeur disponible */
+        justify-content: center; /* Centrage des éléments du menu */
+        align-items: stretch; /* Les éléments enfants prennent toute la largeur disponible */
+    }
+    
+    #menu ul {
+        width: 100%; /* La liste non ordonnée prend toute la largeur disponible */
+        flex-direction: column; /* Les éléments de la liste se positionnent en colonne */
+        align-items: center; /* Centrage horizontal des éléments de la liste */
+        gap: 0; /* Réinitialisation du gap */
+    }
+    
+    #menu li {
+        margin-bottom: 0px; /* Ajout d'un peu d'espace en dessous de chaque élément de la liste */
+        width: 100%; /* Les éléments de la liste prennent toute la largeur disponible */
+        text-align: center; /* Centrage du texte des éléments de la liste */
+    }
+    
+    .button-link {
+        width: 100%; /* Le bouton prend toute la largeur disponible */
+        margin-top: 0px; /* Ajout d'un peu d'espace au-dessus du bouton */
+    }
+
+    .menu-link {
+        left: 0; /* Réinitialisation de la propriété left */
+    }
+}
+
+
+/****** Footer ******/
+#footer {
+    background-color: #FFFFFF; /* Couleur de fond du pied de page */
+    height: 60px; /* Hauteur du pied de page */
+    width: 100%; /* Largeur du pied de page */
+    position: fixed; /* Position fixe */
+    bottom: 0; /* Collé au bas de la page */
+    display: flex; /* Utilisation de Flexbox pour le centrage */
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+}
+
+#legal-notice a {
+    text-decoration: none; /* Suppression du soulignement du lien */
+    color: #000000; /* Couleur du texte du lien, à ajuster selon vos préférences */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+#legal-notice a:hover {
+    text-decoration: underline; /* Soulignement du lien au survol */
+}
+
