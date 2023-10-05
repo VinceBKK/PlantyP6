@@ -10,7 +10,9 @@
 <?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
+<a href="<?php echo home_url(); ?>">
 <img src="http://localhost/planty/wp-content/uploads/2023/09/Logo.png" alt="Logo Planty" id="site-logo"> <!-- Ajout du logo -->
+</a>
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
 </nav>
