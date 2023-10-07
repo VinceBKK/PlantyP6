@@ -188,15 +188,20 @@ main {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 20px;
 }
 
-.products {
+.product-list {
     display: flex;
     gap: 20px;
 }
 
 br {
-    display: none;
+    display: none !important;
+}
+
+#post-17 {
+    background-color: #3B8E46;
 }
 
 /* Style pour chaque produit */
@@ -217,15 +222,16 @@ br {
 /* Style pour le texte sur l'image */
 .product-text {
     position: absolute; /* Positionnement absolu par rapport au bloc .product */
-    top: 50%; /* Centrage vertical */
+    top: 33%; /* Centrage vertical */
     left: 50%; /* Centrage horizontal */
     transform: translate(-50%, -50%); /* Ajustement pour un centrage parfait */
     color: white; /* Couleur du texte, à ajuster selon vos préférences */
-    font-weight: bold; /* Texte en gras */
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir pour améliorer la lisibilité du texte */
+    font-size: 20px;
+    font-weight: 800; /* Texte en gras */
+    line-height: 24px;
     padding: 5px; /* Espacement intérieur pour le texte */
     border-radius: 5px; /* Coins arrondis pour le fond du texte */
-    background-color: rgba(255, 0, 0, 0.5); /* Fond rouge semi-transparent pour la visualisation */
+    text-align: center; /* Centrage du texte */
 }
 
 /* Style pour la boîte de quantité et les boutons d'ajustement */
@@ -314,10 +320,66 @@ input[type="number"] {
     cursor: pointer;
 }
 
-
 .ok-button:hover {
     background-color: #D3A9A0; /* Une couleur légèrement plus foncée pour l'effet de survol */
 }
 
+/* Séparateur ligne blanche */
+.white-separator {
+    width: 100%;
+    border: 0; /* Pour réinitialiser la bordure par défaut */
+    border-top: 1px solid white; /* Ajoute une bordure blanche en haut */
+    margin-top: 20px !important; /* Ajoute une marge au-dessus du séparateur */
+    margin-bottom: 20px; /* Ajoute une marge en dessous du séparateur et le centre horizontalement */
+}
 
+/* Style général pour le formulaire de contact */
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permet aux colonnes de se positionner sur plusieurs lignes si nécessaire */
+    gap: 20px; /* Espacement entre les colonnes */
+    margin-top: 20px; /* Marge au-dessus du formulaire */
+    padding-top: 30px;
+}
 
+/* Style pour les colonnes du formulaire */
+.info-column, .delivery-column {
+    flex: 1; /* Permet aux colonnes de prendre 50% de la largeur chacune */
+    max-width: 50%; /* Limite la largeur à 50% */
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur totale */
+    padding: 10px; /* Espacement intérieur pour chaque colonne */
+}
+
+/* Style pour les labels et les champs de saisie */
+.info-column label, .delivery-column label,
+.info-column input, .delivery-column input {
+    display: block; /* Affiche les éléments en bloc */
+    width: 100%; /* Prend toute la largeur disponible */
+    margin-bottom: 10px; /* Espacement entre les éléments */
+}
+
+/* Style pour les champs de saisie */
+.info-column input, .delivery-column input {
+    padding: 10px; /* Espacement intérieur pour les champs de saisie */
+    height:71px;
+    border: 1px solid #ccc; /* Bordure pour les champs de saisie */
+    border-radius: 5px; /* Coins arrondis pour les champs de saisie */
+}
+
+/* Séparateur ligne blanche verticale */
+.info-column {
+    border-right: 1px solid white; /* Bordure blanche à droite */
+    padding-right: 20px; /* Ajoute un peu d'espace à droite pour séparer le contenu de la bordure */
+}
+
+.delivery-column {
+    padding-left: 20px; /* Ajoute un peu d'espace à gauche pour séparer le contenu de la bordure de la première colonne */
+}
+
+/* Style pour le bouton de soumission */
+.submit-button {
+    width: 100%; /* Prend toute la largeur disponible */
+    text-align: center; /* Centre le bouton horizontalement */
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+}
