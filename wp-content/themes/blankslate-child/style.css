@@ -217,10 +217,10 @@ br {
 
 /* Style pour l'image du produit */
 .product img {
-    width: 192.53px; /* Ajustez selon la taille souhaitée */
-    height: 128.53px; /* Ajustez selon la taille souhaitée */
+    width: 192.53px; /* Ajuster selon la taille souhaitée */
+    height: 128.53px; /* Ajuster selon la taille souhaitée */
     display: block; /* Assure que l'image prend toute la largeur et la hauteur définies */
-    margin-bottom: 20px; /* Ajustez cette valeur selon l'espace que vous souhaitez */
+    margin-bottom: 20px; /* Ajuster cette valeur selon l'espace que vous souhaitez */
 }
 
 /* Style pour le texte sur l'image */
@@ -403,4 +403,57 @@ input[type="number"] {
         display: none;
         background-color: #ffffff;
     }
+}
+
+/****** Style pour le conteneur du formulaire Nous contacter ******/
+
+#nous-contacter {
+    width: 100%;
+    max-width: 400px; /* Largeur maximale pour s'assurer que le formulaire ne dépasse pas la largeur des champs */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    margin-top: 50px;
+}
+
+/* Style pour les labels et les champs de saisie */
+#nous-contacter label {
+    display: block; /* Afficher les éléments les uns en dessous des autres */
+    margin-bottom: 20px; /* Espacement entre les éléments */
+}
+
+#nous-contacter input[type="text"],
+#nous-contacter input[type="email"] {
+    width: 383px;
+    height: 71px;
+    padding: 10px; /* Espacement interne pour le texte */
+    box-sizing: border-box; /* Pour s'assurer que la largeur totale reste à 383px, y compris le padding */
+}
+
+#nous-contacter textarea {
+    width: 383px;
+    height: 237px;
+    padding: 10px; /* Espacement interne pour le texte */
+    box-sizing: border-box; /* Pour s'assurer que la largeur totale reste à 383px, y compris le padding */
+}
+
+#nous-contacter input[type="text"],
+#nous-contacter input[type="email"],
+#nous-contacter textarea {
+    margin-top: 10px;
+}
+
+
+/* Style pour le bouton de soumission */
+#nous-contacter input[type="submit"] {
+    display: block; /* Afficher le bouton en tant qu'élément de bloc */
+    height: 55px;
+    cursor: pointer; /* Changer le curseur en main lors du survol */
+}
+
+#nous-contacter input[type="submit"]:hover {
+    background-color: #555; /* Couleur de fond du bouton lors du survol, à modifier selon vos préférences */
+}
+
+#nous-contacter, .premium-cf7-container .wpcf7-form div, .premium-cf7-container .wpcf7-form p {
+    margin: auto;
+
 }
