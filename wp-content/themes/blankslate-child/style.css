@@ -26,6 +26,10 @@ main {
     margin-bottom: 0px;
 }
 
+.post-edit-link {
+    display: none;
+}
+
 /****** Header ******/
 #header {
     display: flex;
@@ -382,4 +386,21 @@ input[type="number"] {
     width: 100%; /* Prend toute la largeur disponible */
     text-align: center; /* Centre le bouton horizontalement */
     margin-top: 20px; /* Espacement au-dessus du bouton */
+}
+
+/* Media Query pour les écrans de petite taille */
+@media (max-width: 768px) {
+    .info-column {
+        border: none;
+    }
+
+    .product-list {
+        flex-direction: column; /* Les éléments de la liste se positionnent en colonne */
+        align-items: center; /* Les éléments enfants prennent toute la largeur disponible */
+    }
+
+    .header, .entry-title h1 {
+        display: none;
+        background-color: #ffffff;
+    }
 }
