@@ -310,6 +310,12 @@ input[type="number"] {
     border-bottom: 1px solid #ffffff; /* Ligne blanche entre les boutons */
 }
 
+.quantity-controls {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} 
+
 .ok-button {
     display: flex;
     align-items: center;
@@ -381,7 +387,7 @@ input[type="number"] {
 }
 
 .delivery-column {
-    padding-left: 20px; /* Ajoute un peu d'espace à gauche pour séparer le contenu de la bordure de la première colonne */
+    padding-left: 0px; /* Ajoute un peu d'espace à gauche pour séparer le contenu de la bordure de la première colonne */
 }
 
 /* Style pour le bouton de soumission */
@@ -395,6 +401,11 @@ input[type="number"] {
 @media (max-width: 768px) {
     .info-column {
         border: none;
+    }
+
+    .contact-form {
+        flex-direction: column; /* Les éléments de la liste se positionnent en colonne */
+        align-items: center;
     }
 
     .product-list {
