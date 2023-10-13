@@ -18,9 +18,14 @@ body.page, body .wp-block-group {
 
 body {
     font-family: 'Syne', sans-serif;
+    max-width: 1440px;
+    margin: auto;
 }
 
-
+.home {
+    max-width: 1440px;
+    margin: auto;
+}
 
 main {
     margin-bottom: 0px;

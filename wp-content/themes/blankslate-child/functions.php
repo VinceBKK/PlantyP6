@@ -23,3 +23,10 @@ function add_admin_link_to_menu( $items, $args ) {
   return $items;
 }
 add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2 );
+
+function enqueue_child_theme_scripts() {
+  // Enregistrement et ajout de custom-scripts.js
+  wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/custom-scripts.js', array('jquery'), '1.0.0', true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_child_theme_scripts');
+
