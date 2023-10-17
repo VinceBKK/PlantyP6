@@ -406,11 +406,20 @@ input[type="number"] {
 @media (max-width: 768px) {
     .info-column {
         border: none;
+        flex-direction: column; /* Les éléments de la liste se positionnent en colonne */
+        align-items: center;
+        max-width: 100%;
     }
 
     .contact-form {
         flex-direction: column; /* Les éléments de la liste se positionnent en colonne */
         align-items: center;
+    }
+
+    .delivery-column {
+        flex-direction: column; /* Les éléments de la liste se positionnent en colonne */
+        align-items: center;
+        max-width: 100%;
     }
 
     .product-list {
