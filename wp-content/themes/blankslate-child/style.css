@@ -485,3 +485,22 @@ input[type="number"] {
     margin: auto;
 
 }
+
+/* Media Query pour les écrans de petite taille */
+@media (max-width: 768px) {
+    #nous-contacter input[type="text"],
+#nous-contacter input[type="email"] {
+    width: 100%;
+    height: 71px;
+    padding: 10px; /* Espacement interne pour le texte */
+    box-sizing: border-box; /* Pour s'assurer que la largeur totale reste à 383px, y compris le padding */
+}
+
+#nous-contacter textarea {
+    width: 100%;
+    height: 237px;
+    padding: 10px; /* Espacement interne pour le texte */
+    box-sizing: border-box; /* Pour s'assurer que la largeur totale reste à 383px, y compris le padding */
+}
+}
+
